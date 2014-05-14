@@ -30,7 +30,7 @@ Examples:
 >>> MoatIter.incr_dict(test,('a','b'))
 >>> test
 {'a':{'b':1}}
->>> MoatIter.incr_dict(test,('a'))
+>>> MoatIter.incr_dict(test,('a',))
 >>> test
 {'a':1}
 ```
