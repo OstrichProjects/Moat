@@ -22,11 +22,11 @@ def incr_dict(dct,tpl):
 			dictlist.append(createdict(tpl[c:]))
 			break
 		if c == len(tpl)-1 and cur.has_key(tpl[c]):
-			a=1
 			if type(cur[tpl[c]]) is not int:
-				a=2
 				cur[tpl[c]] = 1
 				dictlist.append(cur)
+				if len(dictlist) == 1:
+					dictlist.append(1)
 				dct[tpl[0]] = dictlist[1]
 				return dct
 			cur[tpl[c]] += 1
