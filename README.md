@@ -25,11 +25,12 @@ I decided to always overwrite branches nodes and leaves if the function is calle
 Examples:
 
 ```python
+>>> import MoatIter
 >>> test = {'a': 1}
->>> incr_dict(test,('a','b'))
+>>> MoatIter.incr_dict(test,('a','b'))
 >>> test
 {'a':{'b':1}}
->>> incr_dict(test,('a'))
+>>> MoatIter.incr_dict(test,('a'))
 >>> test
 {'a':1}
 ```
